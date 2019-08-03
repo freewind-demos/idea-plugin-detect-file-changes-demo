@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>idea-plugin-hello-world-demo</id>
-    <name>idea-plugin-hello-world-demo</name>
+    <id>idea-plugin-detect-file-changes-demo</id>
+    <name>idea-plugin-detect-file-changes-demo</name>
     <version>1.0</version>
     <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
 
@@ -28,13 +28,10 @@
         <!-- Add your extensions here -->
     </extensions>
 
-    <actions>
-
-        <group id="idea-plugin-hello-world-demo.SampleMenu" text="_Sample Menu" description="Sample menu of idea-plugin-hello-world-demo">
-            <add-to-group group-id="MainMenu" anchor="last"/>
-            <action id="idea-plugin-hello-world-demo.action.popup" class="actions.HelloAction" text="_Popup" description="Popup a message"/>
-        </group>
-
-    </actions>
+    <project-components>
+        <component>
+            <implementation-class>example.MyProjectComponent</implementation-class>
+        </component>
+    </project-components>
 
 </idea-plugin>
